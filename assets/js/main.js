@@ -81,6 +81,16 @@ const scrollActive = () => {
 }
 addEventListener('scroll', scrollActive);
 
+const colorM = document.getElementById('color__change');
+
+const colorMode = () => {
+    document.getElementById('moon').classList.toggle('deactive');
+    document.getElementById('sun').classList.toggle('deactive');
+    document.body.classList.toggle('light');
+}
+
+colorM.addEventListener('click', colorMode);
+
 const sr=ScrollReveal({
     origin: 'top', distance: '60px', duration: 1000, delay:100
 })
