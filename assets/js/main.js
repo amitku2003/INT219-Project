@@ -99,3 +99,18 @@ sr.reveal('.home__image', {origin: 'bottom'});
 sr.reveal('.about__data, .skills__data', {origin: 'left'});
 sr.reveal('.about__image, .skills__content', {origin: 'right'});
 sr.reveal('.services__card, .projects__card', {interval: 100});
+
+// Color Change
+
+const colors = ["orange", "blue", "pink", "green", "purple"];
+let cc = 0;
+const changeColor = () => {
+    document.body.classList.add(colors[cc]);
+    for(let i=0; i<5; i++){
+        if(i!=cc) document.body.classList.remove(colors[i]);
+    }
+    cc++;
+    if (cc == 5) cc = 0;
+}
+
+document.getElementById("color__pallet").addEventListener("click", changeColor);
