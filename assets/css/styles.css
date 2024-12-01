@@ -807,13 +807,13 @@ img {
     justify-self: flex-end;
   }
   .scrollup{
-    right: 3rem;
+    right: 2.5rem;
   }
   .color__mode{
-    right: 3rem;
+    right: 2.5rem;
   }
   .color__pallet{
-    right: 3rem;
+    right: 2.5rem;
   }
 }
 
